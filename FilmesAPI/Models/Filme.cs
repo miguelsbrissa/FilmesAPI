@@ -1,12 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace FilmesAPI;
+namespace FilmesAPI.Models;
 
 public class Filme
 {
     [Key]
     [Required]
-    public int Id{ get; set; }    
+    public int Id { get; set; }
 
     [Required(ErrorMessage = "O título é obrigatório!")]
     public string Titulo { get; set; }
